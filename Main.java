@@ -1,16 +1,16 @@
 import java.util.Iterator;
 public class Main {
     public static void main(String[] args) {
-        BST<Integer, String> bst = new BST<>();
+        BST<Integer, Integer> bst = new BST<>();
 
         // Insert key-value pairs into the binary search tree
-        bst.put(5, "Apple");
-        bst.put(3, "Banana");
-        bst.put(7, "Orange");
-        bst.put(2, "Mango");
-        bst.put(4, "Pineapple");
-        bst.put(6, "Grapes");
-        bst.put(8, "Kiwi");
+        bst.put(5, 4);
+        bst.put(3, 1);
+        bst.put(7, 42);
+        bst.put(2, 2);
+        bst.put(4, 15);
+        bst.put(6, 6);
+        bst.put(8, 31);
 
         // Print the size of the binary search tree
         System.out.println("Size: " + bst.size());
@@ -27,7 +27,7 @@ public class Main {
 
         // Iterate over the binary search tree using the iterator
         System.out.println("Iterating over the binary search tree:");
-        Iterator<BST<Integer, String>.KeyValuePair> iterator = bst.iterator();
+        Iterator<BST<Integer, Integer>.KeyValuePair> iterator = bst.iterator();
         while (iterator.hasNext()) {
             BST.KeyValuePair pair = iterator.next();
             System.out.println("Key: " + pair.getKey() + ", Value: " + pair.getValue());
