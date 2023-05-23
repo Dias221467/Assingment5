@@ -12,8 +12,9 @@ public class Main {
         bst.put(6, 6);
         bst.put(8, 31);
 
-        // Print the size of the binary search tree
+        // Print the size and height of the binary search tree
         System.out.println("Size: " + bst.size());
+        System.out.println("Height of the BST is " + bst.height());
 
         // Get values by keys
         System.out.println("Value for key 4: " + bst.get(4));
